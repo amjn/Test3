@@ -20,7 +20,7 @@ stages:
             # - powershell: |
             #    ls $(Build.ArtifactStagingDirectory)/
               - download: P1
-                artifact: A2
+                # artifact: A2
               # - task: PublishBuildArtifacts@1
               #   inputs:
               #     PathtoPublish: 'artifact3'
