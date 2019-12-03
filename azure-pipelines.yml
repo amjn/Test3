@@ -12,7 +12,7 @@ stages:
    jobs:
      - deployment: Test3DeploymentJob9
        environment: envionment2
-       pool: Default
+       pool: hosted
        strategy:
         runOnce:
           deploy:
