@@ -17,7 +17,8 @@ stages:
         runOnce:
           deploy:
             steps:
-              - script: find .
+              - powershell: |
+                 ls $(Build.ArtifactStagingDirectory)/
               # - download: none
             # - powershell: |
             #    ls $(Build.ArtifactStagingDirectory)/
