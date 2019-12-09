@@ -29,10 +29,12 @@ stages:
               #     PathtoPublish: 'artifact3'
               #     ArtifactName: 'A3_Project2'
               #     publishLocation: 'Container'
-    #  - job: J44_Normal
-    #    pool: 
-    #     name: Default
-    #    steps:
+     - job: J44_Normal
+       pool: 
+        name: Default
+       steps:
+        - powershell: |
+                 ls $(Build.ArtifactStagingDirectory)/
     #      - download: P1
     #        artifact: A1.1
     #      - task: PublishBuildArtifacts@1
