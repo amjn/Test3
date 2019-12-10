@@ -19,7 +19,7 @@ stages:
             steps:
               - powershell: |
                  ls $(Build.ArtifactStagingDirectory)/
-              - download: none
+              # - download: none
             # - powershell: |
             #    ls $(Build.ArtifactStagingDirectory)/
               - download: P1
