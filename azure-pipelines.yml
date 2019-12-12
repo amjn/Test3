@@ -35,7 +35,7 @@ stages:
        steps:
         - powershell: |
                  ls $(Build.ArtifactStagingDirectory)/
-        # - download: P1
+        - download: current
           # artifact: A1.1
     #      - task: PublishBuildArtifacts@1
     #        inputs:
