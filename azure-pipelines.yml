@@ -19,7 +19,7 @@ stages:
             steps:
               - powershell: |
                  ls $(Build.ArtifactStagingDirectory)/
-              - download: P1
+              - download: none
                 # artifact: A2
             # - powershell: |
             #    ls $(Build.ArtifactStagingDirectory)/
@@ -36,7 +36,7 @@ stages:
        steps:
         - powershell: |
                  ls $(Build.ArtifactStagingDirectory)/
-        - download: P1
+        - download: none
           # artifact: A1.1
     #      - task: PublishBuildArtifacts@1
     #        inputs:
