@@ -1,8 +1,9 @@
 resources:
  pipelines:
    - pipeline: P1
-     source: jainamanjain.Test2
      project: Project1
+     source: jainamanjain.Test2
+     
 
 trigger:
 - master
