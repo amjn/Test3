@@ -2,7 +2,7 @@ resources:
  pipelines:
    - pipeline: P1
      source: jainamanjain.Test2
-     project: e570c718-c317-40b3-8a39-ea03ae24b779
+     project: project1
 
 trigger:
 - master
