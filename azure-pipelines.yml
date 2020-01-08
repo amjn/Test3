@@ -18,9 +18,17 @@ stages:
         runOnce:
           deploy:
             steps:
-              - powershell: |
+            - task: DownloadPipelineArtifact@2
+              inputs:
+                buildType: 'specific'
+                project: 'e570c718-c317-40b3-8a39-ea03ae24b779'
+                definition: '1'
+                buildVersionToDownload: 'latest'
+                targetPath: '$(Pipeline.Workspace)'
+    
+            - powershell: |
                  ls $(Build.ArtifactStagingDirectory)/
-              # - download: P1
+            - download: none
                 # artifact: A2
             # - powershell: |
             #    ls $(Build.ArtifactStagingDirectory)/
@@ -37,7 +45,7 @@ stages:
        steps:
         - powershell: |
                  ls $(Build.ArtifactStagingDirectory)/
-        - download: P1
+        # - download: P1
           artifact: A1.1
     #      - task: PublishBuildArtifacts@1
     #        inputs:
