@@ -1,7 +1,7 @@
 resources:
  pipelines:
    - pipeline: P1
-     project: Project1
+    #  project: Project1
      source: amjn.Test2
      
 
